@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ <plugin xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+
+  <label lang="de">SuperfishMenu</label>
+  <label lang="en">SuperfishMenu</label>
+
+  <version>1.2.5</version>
+  <copyright>(c) by Gläser undflaschen GmbH</copyright>
+  <license>GPL</license>
+  <link>http://www.grlaeserundflaschen.de</link>
+  <author>KMATTERN (c) by Gläser und Flaschen GmbH</author>
+  <description>jQuery Superfish Menü (Superfish v1.7.10 - The jQuery menu plugin by Joel Birch) für Shopware5 mit "Kategorie - highlighter" und "Teaser - Konfigurator"</description>
+  <compatibility minVersion="5.3.0" maxVersion="5.9.99"/>
+
+  <changelog version="1.2.5">
+        <changes lang="de">
+	<![CDATA[
+                <ul>
+                    <li>Nun kann man die Farbe der hervorgehobenen Kategorie anpassen.</li>
+                </ul>
+        ]]>
+	</changes>
+        <changes lang="en">
+	<![CDATA[
+                <ul>
+                    <li>now you can customize the color for the highlighted category</li>
+                </ul>
+        ]]>
+	</changes>
+  </changelog>
+
+  <changelog version="1.2.0">
+        <changes lang="de">
+	<![CDATA[
+                <ul>
+                    <li>Maximale Anzahl an Hauptkategorien in der ersten Navigationszeile einstellbar.</li>
+                </ul>
+        ]]>
+	</changes>
+        <changes lang="en">
+	<![CDATA[
+                <ul>
+                    <li>free defineable maximum of main-categories in first row</li>
+                </ul>
+        ]]>
+	</changes>
+  </changelog>
+
+  <changelog version="1.1.0">
+        <changes lang="de">
+	<![CDATA[
+                <ul>
+                    <li>Einstellen einer hervorzuhebenen Kategorie anhand der System-ID eingebunden.</li>
+                </ul>
+        ]]>
+	</changes>
+  	<changes lang="en">
+	<![CDATA[
+                <ul>
+                    <li>mark one category as important</li>
+                </ul>
+        ]]>
+	</changes>
+  </changelog>
+
+  <changelog version="1.0.0">
+        <changes lang="de">
+	<![CDATA[
+                <ul>
+                    <li>Erster Ansatz, das erweiterte Menü auf SuperfishMenu umzustellen. hoverIntent und Superfish, sowie Farbthema integriert</li>
+                </ul>
+        ]]>
+	</changes>
+  	<changes lang="en">
+	<![CDATA[
+                <ul>
+                    <li>first edits of advanced menu to integrate SuperfishMenu</li>
+                </ul>
+        ]]>
+	</changes>
+  </changelog>
+
+  </plugin>
