@@ -5,13 +5,32 @@
   <label lang="de">SuperfishMenu</label>
   <label lang="en">SuperfishMenu</label>
 
-  <version>1.2.5</version>
+  <version>1.2.8</version>
   <copyright>(c) by Gläser undflaschen GmbH</copyright>
   <license>GPL</license>
   <link>http://www.grlaeserundflaschen.de</link>
   <author>KMATTERN (c) by Gläser und Flaschen GmbH</author>
   <description>jQuery Superfish Menü (Superfish v1.7.10 - The jQuery menu plugin by Joel Birch) für Shopware5 mit "Kategorie - highlighter" und "Teaser - Konfigurator"</description>
   <compatibility minVersion="5.3.0" maxVersion="5.9.99"/>
+
+  <changelog version="1.2.6 - 1.2.8">
+        <changes lang="de">
+	<![CDATA[
+                <ul>
+                    <li>neue Klasse für die erste Menüzeile angelegt, damit wird das SuperfishMenü unter der zweiten Menüzeile angezeigt.</li>
+                    <li>Korrektur der Pixel für margin-top (36 => 33)</li>
+                </ul>
+        ]]>
+	</changes>
+        <changes lang="en">
+	<![CDATA[
+                <ul>
+                    <li>added new class for the maxFirstRow to position the submenu dropdown under the second menu row</li>
+		    <li>fixed the margin-top for the submenu dropdown</li>
+                </ul>
+        ]]>
+	</changes>
+  </changelog>
 
   <changelog version="1.2.5">
         <changes lang="de">
