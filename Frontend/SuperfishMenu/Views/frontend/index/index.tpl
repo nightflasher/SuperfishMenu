@@ -64,7 +64,7 @@
 							{$submenubuilder=$sSuperfishMenu.{$sCategory@index}.sub}
 
 							{if  $sCategory.childrenCount > 0}
-							<div class="sf-mega">
+							<div class="sf-mega {if $sCategory@index < $maxFirstRow}toprow{/if}">
 								{if $teaserPos == '2' || $teaserPos == '0'}
 									{call subs subcategories=$submenubuilder}
 									<hr>
