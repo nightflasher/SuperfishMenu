@@ -5,13 +5,30 @@
   <label lang="de">SuperfishMenu</label>
   <label lang="en">SuperfishMenu</label>
 
-  <version>1.2.8</version>
+  <version>1.2.9</version>
   <copyright>(c) by Gläser undflaschen GmbH</copyright>
   <license>GPL</license>
   <link>http://www.grlaeserundflaschen.de</link>
   <author>KMATTERN (c) by Gläser und Flaschen GmbH</author>
   <description>jQuery Superfish Menü (Superfish v1.7.10 - The jQuery menu plugin by Joel Birch) für Shopware5 mit "Kategorie - highlighter" und "Teaser - Konfigurator"</description>
   <compatibility minVersion="5.3.0" maxVersion="5.9.99"/>
+
+   <changelog version="1.2.9">
+        <changes lang="de">
+	<![CDATA[
+                <ul>
+                    <li>plugin.json erstellt</li>
+                </ul>
+        ]]>
+	</changes>
+        <changes lang="en">
+	<![CDATA[
+                <ul>
+                    <li>created plugin.json</li>
+                </ul>
+        ]]>
+	</changes>
+  </changelog>
 
   <changelog version="1.2.6 - 1.2.8">
         <changes lang="de">
