@@ -221,14 +221,14 @@ class Shopware_Plugins_Frontend_SuperfishMenu_Bootstrap extends Shopware_Compone
         $form->setElement('text', 'maxFirstRow', [
             'label' => 'maximale Kategorien in erster Zeile',
             'value' => 8,
-	    'description' => 'Das Menü kann bei zu vielen Hauptkategorien übersichtlicher gestaltet werden.',
+	    'description' => 'Das Menü kann bei zu vielen Hauptkategorien übersichtlicher gestaltet werden. 0 ergibt nur eine Menüzeile!',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP,
         ]);
 
         $form->setElement('text', 'importantCat', [
             'label' => 'Kategorie hervorheben (System-ID)',
             'value' => 0,
-	    'decription' => 'Um eine besonders wichtige/interessante Kategorie hervorzuheben.',
+	    'decription' => 'Um eine besonders wichtige/interessante Kategorie hervorzuheben. Die System-ID steht jeweils bei den Kategorien (Allgemeine Einstellungen - Kategorie: *** (System-ID: ***))',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP,
         ]);
 	
