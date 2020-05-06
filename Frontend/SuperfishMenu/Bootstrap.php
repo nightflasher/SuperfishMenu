@@ -9,7 +9,6 @@ use Shopware\Components\Plugin;
  */
 class Shopware_Plugins_Frontend_SuperfishMenu_Bootstrap extends Shopware_Components_Plugin_Bootstrap 
 {
-
     /**
      * @return string
      */
