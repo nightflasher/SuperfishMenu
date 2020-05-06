@@ -228,7 +228,7 @@ class Shopware_Plugins_Frontend_SuperfishMenu_Bootstrap extends Shopware_Compone
         $form->setElement('text', 'importantCat', [
             'label' => 'Kategorie hervorheben (System-ID)',
             'value' => 0,
-	    'decription' => 'Um eine besonders wichtige/interessante Kategorie hervorzuheben. Die System-ID steht jeweils bei den Kategorien (Allgemeine Einstellungen - Kategorie: *** (System-ID: ***))',
+	    'description' => 'Um eine besonders wichtige/interessante Kategorie hervorzuheben. Die System-ID steht jeweils bei den Kategorien (Allgemeine Einstellungen - Kategorie: *** (System-ID: ***))',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP,
         ]);
 	
