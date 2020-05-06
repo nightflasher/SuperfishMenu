@@ -1,0 +1,35 @@
+{
+    "label": {
+        "de"": SuperfishMenu",
+        "en"": SuperfishMenu"
+    },
+    "copyright"": (c) by Gläser und Flaschen GmbH",
+    "license"": GPL",
+    "link"": https://glaeserundflaschen.de",
+    "author"": KMATTERN",
+    "currentVersion"": 1.2.9",
+    "changelog": {
+        "de": {
+		"1.2.6 - 1.2.8":"neue Klasse für die erste Menüzeile angelegt, damit wird das SuperfishMenü unter der zweiten Menüzeile angezeigt.
+				 Korrektur der Pixel für margin-top (36 => 33)",
+		"1.2.5":"Nun kann man die Farbe der hervorgehobenen Kategorie anpassen.",
+		"1.2.0":"Maximale Anzahl an Hauptkategorien in der ersten Navigationszeile einstellbar.",
+		"1.1.0":"Einstellen einer hervorzuhebenen Kategorie anhand der System-ID eingebunden.",
+		"1.0.0":"Erster Ansatz, das erweiterte Menü auf SuperfishMenu umzustellen. hoverIntent und Superfish, sowie Farbthema integriert"                
+        },
+        "en": {
+		"1.2.6 - 1.2.8":"added new class for the maxFirstRow to position the submenu dropdown under the second menu row
+				 fixed the margin-top for the submenu dropdown",
+		"1.2.5":"now you can customize the color for the highlighted category",
+		"1.2.0":"free defineable maximum of main-categories in first row",
+		"1.1.0":"mark one category as important",
+		"1.0.0":"first edits of advanced menu to integrate SuperfishMenu"
+        }
+    },
+    "compatibility": {
+        "minimumVersion": "5.6.0",
+        "maximumVersion": "5.99.99",
+        "blacklist": [
+        ]
+    }
+}
