@@ -209,12 +209,14 @@ class Shopware_Plugins_Frontend_SuperfishMenu_Bootstrap extends Shopware_Compone
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP,
         ]);
 
-        $form->setElement('text', 'levels', [
+        $form->setElement('number', 'levels', [
             'label' => 'Anzahl Ebenen',
+            'minValue' => '2',
             'value' => 3,
-	    'description' => 'Anzahl an Unterkategorien kann hier auf die nächsten Unterkategorien verweisen, oder auch tiefer in die Menüstruktur zeigen. Bitte mindestens eine 2 eintragen, da sonst keine Unterkategorie angezeigt werden kann.',
+            'description' => 'Anzahl an Unterkategorien kann hier auf die nächsten Unterkategorien verweisen, oder auch tiefer in die Menüstruktur zeigen.',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP,
         ]);
+
 
         $form->setElement('text', 'maxFirstRow', [
             'label' => 'maximale Kategorien in erster Zeile',
