@@ -7,9 +7,12 @@
     "license"": GPL",
     "link"": https://glaeserundflaschen.de",
     "author"": KMATTERN",
-    "currentVersion"": 1.2.9",
+    "currentVersion"": 1.3.1",
     "changelog": {
         "de": {
+		"1.3.1":"original menü main-navigation.tpl mit smarty.block.parent wieder eingebunden, um ajax inhalte zu nutzen
+			 original menü main-navigation.tpl wird jedoch mit display:none versteckt",
+
 		"1.2.6 - 1.2.8":"neue Klasse für die erste Menüzeile angelegt, damit wird das SuperfishMenü unter der zweiten Menüzeile angezeigt.
 				 Korrektur der Pixel für margin-top (36 => 33)",
 		"1.2.5":"Nun kann man die Farbe der hervorgehobenen Kategorie anpassen.",
@@ -18,6 +21,8 @@
 		"1.0.0":"Erster Ansatz, das erweiterte Menü auf SuperfishMenu umzustellen. hoverIntent und Superfish, sowie Farbthema integriert"                
         },
         "en": {
+		"1.3.1":"readded the original main-navigation.tpl with smarty.block.parent to re-enable ajax content
+		         original menu main-navigation.tpl content is hidden by display:none",
 		"1.2.6 - 1.2.8":"added new class for the maxFirstRow to position the submenu dropdown under the second menu row
 				 fixed the margin-top for the submenu dropdown",
 		"1.2.5":"now you can customize the color for the highlighted category",
