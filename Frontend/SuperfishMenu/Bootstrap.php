@@ -219,7 +219,7 @@ class Shopware_Plugins_Frontend_SuperfishMenu_Bootstrap extends Shopware_Compone
 
         $form->setElement('text', 'maxFirstRow', [
             'label' => 'maximale Kategorien in erster Zeile',
-            'value' => 8,
+            'value' => 0,
 	    'description' => 'Das Menü kann bei zu vielen Hauptkategorien übersichtlicher gestaltet werden. 0 ergibt nur eine Menüzeile!',
             'scope' => \Shopware\Models\Config\Element::SCOPE_SHOP,
         ]);
