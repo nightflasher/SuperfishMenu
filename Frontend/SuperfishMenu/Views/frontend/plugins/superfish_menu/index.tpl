@@ -5,7 +5,7 @@
 	});
 </script>
 {function name="subs" level=0}
-{block name="frontend_plugins_advanced_menu_main_container"}
+{block name="frontend_plugins_superfish_menu_main_container"}
 	{foreach $subcategories as $category}
                 {if $category.hideTop}
                     {continue}
