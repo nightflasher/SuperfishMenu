@@ -38,19 +38,32 @@
 {/block}
 {/function}
 
-<div id="menu_top">
+<div class="menu_top">
     {block name="frontend_plugins_superfish_menu"}
 	<ul class="sf-menu container" style="z-index: 3001;"  role="menubar" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-	    {foreach $sMainCategories as $sCategory}
-        {block name="frontend_plugins_superfish_menu_main_container"}
+	    {foreach $sMainCategories as  $sCategory}
+            {if !$sCategory.active || $sCategory.hideTop}
+                {continue}
+            {/if}
+
+            {$link = $sCategory.link}
+
+            {if $sCategory.external}
+                {$link = $sCategory.external}
+            {/if}
+
 		{$hasCategories = $sCategory.activeCategories }
-       		{$hasTeaser = (!empty($sCategory.media) || !empty($sCategory.cmsHeadline) || !empty($sCategory.cmsText))}
+       	{$hasTeaser = (!empty($sCategory.media) || !empty($sCategory.cmsHeadline) || !empty($sCategory.cmsText))}
+
+                {block name="frontend_plugins_superfish_menu_main_container"}
+
                 {if !$sCategory.hideTop || $sCategory.active}
  	            <li {if $sCategory.id == $importantCat}style="background:{$highlightColor};"{/if} role="menuitem">
 	            {block name="frontend_plugins_superfish_menu_button_category"}
 				<a href="{$sCategory.link}" title="{$sCategory.description}" {if $sBreadcrumb.0.id == $sCategory.id}class="active" {/if} aria-label="{$sCategory.description}" itemprop="url"{if $sCategory.external && $sCategory.externalTarget} target="{$sCategory.externalTarget}"{/if}>
 	                <span itemprop="name">{$sCategory.description}</span>
 				</a>
+	            {/block}
 				{$submenubuilder=$sSuperfishMenu.{$sCategory@index}.sub}
 				{if  $sCategory.childrenCount > 0}
 				    <div class="sf-mega {if $sCategory@index < $maxFirstRow}toprow{/if}">
@@ -86,14 +99,13 @@
 
 					</div>
 				{/if}
-                {/block}
                 </li>
 			    {if $sCategory@index == $maxFirstRow-1}
 				    </ul>
 				    <ul class="sf-menu container" style="z-index: 3000;" role="menubar" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 			    {/if}
             {/if}
-	    {/block}
+        {/block}
 	    {/foreach}
 	</ul>
     {/block}
