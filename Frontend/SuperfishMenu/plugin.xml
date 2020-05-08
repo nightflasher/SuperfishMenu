@@ -5,7 +5,7 @@
   <label lang="de">SuperfishMenu</label>
   <label lang="en">SuperfishMenu</label>
 
-  <version>1.2.9</version>
+  <version>1.3.1</version>
   <copyright>(c) by Gläser undflaschen GmbH</copyright>
   <license>GPL</license>
   <link>http://www.grlaeserundflaschen.de</link>
@@ -14,6 +14,25 @@
   <compatibility minVersion="5.3.0" maxVersion="5.9.99"/>
 
    <changelog version="1.2.9">
+        <changes lang="de">
+	<![CDATA[
+                <ul>
+                    <li>original menü main-navigation.tpl mit smarty.block.parent wieder eingebunden, um ajax inhalte zu nutzen</li>
+                    <li>original menü main-navigation.tpl wird jedoch mit display:none versteckt</li>
+                </ul>
+        ]]>
+	</changes>
+        <changes lang="en">
+	<![CDATA[
+                <ul>
+                    <li>readded the original main-navigation.tpl with smarty.block.parent to re-enable ajax content</li>
+                    <li>original menu main-navigation.tpl content is hidden by display:none</li>
+                </ul>
+        ]]>
+	</changes>
+  </changelog>
+	 
+<changelog version="1.2.9">
         <changes lang="de">
 	<![CDATA[
                 <ul>
