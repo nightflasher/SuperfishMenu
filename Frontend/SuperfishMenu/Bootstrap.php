@@ -14,7 +14,7 @@ class Shopware_Plugins_Frontend_SuperfishMenu_Bootstrap extends Shopware_Compone
      */
     public function getVersion()
     {
-        return '1.2.9';
+        return '1.3.1';
     }
 
     /**
